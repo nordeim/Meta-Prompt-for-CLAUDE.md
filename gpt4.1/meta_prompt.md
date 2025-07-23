@@ -1,46 +1,3 @@
-<think>
-Let me thoroughly analyze both sample CLAUDE.md files. Their purpose is to guide Claude Code (claude.ai/code)—an AI coding assistant—when working with the repository. They do this by providing:
-
-- A clear project overview (what it is, what it does)
-- High-level architecture and main components (with file references, sometimes even line numbers)
-- Key design and implementation patterns (e.g., async/await, agent/repository/strategy patterns)
-- Quick start and development commands (to install, run, test, format, check types, etc.)
-- Environment variables and configuration
-- File structure, with descriptions of key files and their responsibilities/classes/methods
-- Special integration notes (e.g., MCP server, TUI, etc.)
-- Guidance for common development tasks (how to add features, extend commands, etc.)
-- Testing instructions and patterns
-- Performance notes and data storage info
-- Hotkeys, commands, or user interaction details, if applicable
-
-The file is essentially a meta "guide" for the AI, combining README-like information with a developer’s architectural and operational intuition, but tailored for the AI’s needs: quick context, actionable commands, and "where to look" hints.
-
-Both samples use markdown, clear headings, lists, code blocks, and tables. They do not explain every detail, but provide enough actionable structure and links to core implementation files/classes/methods, enabling the AI to quickly orient itself.
-
-Therefore, a master/meta prompt should instruct the AI to generate a CLAUDE.md file that:
-
-- Is concise but comprehensive, using markdown.
-- Begins with a statement of its own purpose: to guide Claude Code for this project.
-- Provides a high-level overview and core goals.
-- Maps main architectural components, giving file locations and main responsibilities.
-- Lists key design and implementation patterns.
-- Details how to set up, run, test, and develop the codebase, with commands.
-- Specifies required environment variables/configuration.
-- Maps out the file/directory structure with descriptions of key files/classes/functions.
-- Notes special integrations, services, or frameworks used.
-- Offers actionable guides for common developer/maintenance tasks.
-- Gives instructions on testing, mocking, and validation.
-- Describes performance, data storage, and user interaction notes if relevant.
-
-I should also instruct the AI to use clear markdown formatting: headings, bullet points, code blocks, tables, diagrams if helpful, and reference file paths/line numbers when possible.
-
-Finally, the prompt should be generic, so that the AI can adapt it to any codebase, regardless of language, framework, or domain.
-
-</think>
-
-````markdown
-# MASTER META PROMPT: Generate CLAUDE.md for Any Project
-
 You are to create a comprehensive `CLAUDE.md` file in markdown format to guide Claude Code (claude.ai/code) when working with the codebase of this project.
 
 Your CLAUDE.md file must serve as a quick reference and deep contextual guide for the AI coding assistant. It should provide a clear project overview, architectural map, actionable setup and development instructions, and pointers to key files, classes, and patterns in the repository.
@@ -127,4 +84,3 @@ See the provided sample CLAUDE.md files for inspiration. Match their clarity, de
 ---
 
 **Your output must be a markdown file named `CLAUDE.md`.**
-````
