@@ -1,36 +1,3 @@
-<think>
-I need to craft a meta-prompt that, when fed to an AI coding assistant, will produce a `CLAUDE.md` file mirroring the structure and style of the two samples. First, I’ll enumerate the common sections:
-
-- Header with purpose.
-- Project Overview (name + one-line summary).
-- Quick Start (install, env setup, run).
-- Core Architecture: Main Components + Key Design Patterns.
-- Development Commands: setup, run, test, workflow.
-- Environment Variables.
-- Table of Key Files & Responsibilities.
-- Integration Details (e.g., MCP, DB).
-- Testing patterns.
-- File Structure tree.
-- Common Development Tasks.
-- Performance Notes / Data Storage.
-- Hotkeys or CLI commands (if CLI).
-  
-Then I’ll build a template prompting the AI to discover all this from the codebase. I must instruct it to:
-
-- Scan code paths, identify modules, classes, scripts.
-- Detect dependencies & commands.
-- Extract environment var names.
-- List commands in code (e.g., Click, argparse, npx).
-- Summarize design patterns.
-- Build file tree automatically.
-- Use markdown headings, bullet lists, tables, code fences.
-- Leave placeholders or auto-populate with project specifics.
-
-I'll package that into a single master prompt wrapped in a Markdown code block.
-
-</think>
-
-```markdown
 You are an AI coding assistant. Your task is to generate a comprehensive `CLAUDE.md` file for a new project codebase, following the structure and style of proven `CLAUDE.md` samples.  
 
 Use these guidelines:
@@ -171,4 +138,3 @@ Follow these rules when filling the template:
 - Use fenced code blocks for commands.
 - Create valid Markdown tables for key files or comparison sections.
 - Populate every placeholder (`{{…}}`) with project-specific values extracted or inferred from the codebase.
-```
