@@ -17,7 +17,7 @@ Writing a structured guide for an AI assistant is tedious and error-prone.
 
 ## 🚀 Our Solution
 
-Use a single **master prompt** to automatically generate a `CLAUDE.md` file tailored to your project.  
+Use a single **[master prompt](https://raw.githubusercontent.com/nordeim/claude-md-generator/refs/heads/main/copilot/meta_prompt.md)** to automatically generate a `CLAUDE.md` file tailored to your project.  
 This meta-prompt:
 
 - Scans modules, scripts, and config files  
